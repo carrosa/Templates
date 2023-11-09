@@ -1,0 +1,66 @@
+
+\documentclass[aspectratio=43]{beamer}
+\usepackage[english]{babel}
+\usepackage{booktabs,listings}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{xcolor}
+
+\usetheme[slogan=english, style=plain, mathfont=serif]{NTNU}
+
+\usepackage [
+lambda,
+advantage,
+operators,
+sets,
+adversary,
+landau,
+probability,
+notions,
+ff,
+mm,
+primitives,
+events,
+asymptotics,
+keys
+] {cryptocode}
+
+\title{TITLE}
+\subtitle{SUBTITLE}
+\author{AUTHOR}
+\date{DATE}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\frametitle{Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\AtEndDocument{\begin{frame}
+		\begin{center}
+			\Huge Questions?
+		\end{center}
+	\end{frame}
+}
+
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{10pt}}{\enditemize}
+\newenvironment{wideenumerate}{\enumerate\addtolength{\itemsep}{10pt}}{\endenumerate}
+
+\begin{document}
+	\maketitle
+	\begin{frame}{Contents}
+		\tableofcontents
+	\end{frame}
+
+	\section{Introduction}
+	
+	\begin{frame}{Randomness}
+		
+		\begin{block}{}
+			RANDOMNESS	
+		\end{block}
+		
+	\end{frame}
+\end{document}
