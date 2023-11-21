@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Long Lined Cover Letter
+% LaTeX Template
+% Version 2.0 (September 17, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors: Wlving Lee
+% (lee.wlving@connect.um.edu.mo)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{ntnu}{RGB}{0, 80, 159}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=ntnu}
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.3\textwidth]{ntnu_hoeyde_eng.pdf} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip% Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\today \bigskip\\ % Date
+    \textbf{Anamaria Costache} \\
+    Associate Professor \\
+	NTNU -- Norwegian University\\of Science and Technology \\ % Address
+	Høgskoleringen 1\\ 7034 Trondheim \\
+	\href{mailto:anamaria.costache@ntnu.no}{anamaria.costache@ntnu.no}\\
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{@{} l}
+	\textbf{Mariana Raykova} \\
+	  Scholarship Secretary \\
+	Real World Crypto Symposium 2023
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+\textbf{Supervisor Support Statement for Pia Bauspieß}
+
+\bigskip
+
+Dear Mariana Raykova,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+I am writing to you to express my support for the Real World Crypto student stipend application of my PhD student Pia Bauspieß.
+
+(...)
+
+
+
+\bigskip % Vertical whitespace
+
+Sincerely yours,
+
+\vspace{-10pt} % Vertical whitespace
+
+%Signature
+\vspace{50pt} %remove when adding signature
+%\begin{figure}[h!]
+%    \includegraphics[width=0.25\textwidth]{Sign_transparent_2021.png}
+%\end{figure}
+
+\vspace{-10pt} % Vertical whitespace
+Name
+
+
+
+\end{document}
