@@ -1,4 +1,4 @@
-# My Most Used Beamer Templates
+# My Most Used Templates
 
 ## Templates:
 
